@@ -1,43 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineer Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body style="background:#ecf0f1;">
+<div class="dashboard-container">
 
-  <!-- TOP NAVIGATION -->
-  <div style="text-align:right; margin:20px 40px 0 0;">
-    <a href="engineer.html">Dashboard</a> |
-    <a href="profile.html">My Profile</a> |
-    <a href="index.html">Logout</a>
+  <!-- Dashboard Cards -->
+  <div class="dashboard-cards">
+    <div class="dashboard-card">Projects</div>
+    <div class="dashboard-card">Tasks</div>
+    <div class="dashboard-card">Reports</div>
   </div>
 
-  <!-- DASHBOARD BOX -->
+  <!-- Engineer Form -->
   <div class="dashboard-box">
-    <h1>Welcome, Engineer!</h1>
-    <p>This is your dashboard. All your tools and info are here.</p>
+    <form class="dashboard-form">
+      <label for="site-photo">Upload Site Photo</label>
+      <input type="file" id="site-photo" name="site-photo">
 
-    <!-- Example content cards -->
-    <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:30px;">
-      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
-        <h3>Projects</h3>
-        <p>View and manage your projects.</p>
-      </div>
-      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
-        <h3>Tasks</h3>
-        <p>Check your assigned tasks.</p>
-      </div>
-      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
-        <h3>Reports</h3>
-        <p>Generate performance reports.</p>
-      </div>
-    </div>
+      <label for="site-name">Site Name</label>
+      <input type="text" id="site-name" name="site-name" value="Bridge Project">
+
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" value="Coimbatore">
+
+      <label for="work-status">Work Status</label>
+      <select id="work-status" name="work-status">
+        <option value="foundation">Foundation</option>
+        <option value="structure">Structure</option>
+        <option value="finishing">Finishing</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
   </div>
 
-</body>
-</html>
-
-
+</div>
