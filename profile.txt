@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>My Profile</h2>
+
+    <label>Profile Photo</label><br>
+    <input type="file"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" placeholder="engineer@infraly.com"><br><br>
+
+    <label>Password</label><br>
+    <input type="password" placeholder="******"><br><br>
+
+    <button>Update Profile</button>
+  </div>
+
+</body>
+</html>
