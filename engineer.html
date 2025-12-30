@@ -1,33 +1,148 @@
-<div class="dashboard-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineer Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- Dashboard Cards -->
-  <div class="dashboard-cards">
-    <div class="dashboard-card">Projects</div>
-    <div class="dashboard-card">Tasks</div>
-    <div class="dashboard-card">Reports</div>
+    .dashboard-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Cards Section */
+    .dashboard-cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      flex: 1 1 30%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      min-width: 200px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Profile Form */
+    .dashboard-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dashboard-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .dashboard-box label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .dashboard-box input,
+    .dashboard-box select,
+    .dashboard-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .dashboard-box input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dashboard-box input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+      .dashboard-cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- Cards Section -->
+    <div class="dashboard-cards">
+      <div class="card">
+        <h3>Projects</h3>
+        <p>12 Active</p>
+      </div>
+      <div class="card">
+        <h3>Tasks</h3>
+        <p>5 Pending</p>
+      </div>
+      <div class="card">
+        <h3>Reports</h3>
+        <p>3 Generated</p>
+      </div>
+    </div>
+
+    <!-- Engineer Profile Form -->
+    <div class="dashboard-box">
+      <form class="dashboard-form">
+        <h2>My Profile</h2>
+
+        <label for="profile-photo">Profile Photo</label>
+        <input type="file" id="profile-photo" name="profile-photo">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="Vishal D.">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="engineer@infraly.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" value="******">
+
+        <input type="submit" value="Update Profile">
+      </form>
+    </div>
+
   </div>
 
-  <!-- Engineer Form -->
-  <div class="dashboard-box">
-    <form class="dashboard-form">
-      <label for="site-photo">Upload Site Photo</label>
-      <input type="file" id="site-photo" name="site-photo">
+</body>
+</html>
 
-      <label for="site-name">Site Name</label>
-      <input type="text" id="site-name" name="site-name" value="Bridge Project">
-
-      <label for="location">Location</label>
-      <input type="text" id="location" name="location" value="Coimbatore">
-
-      <label for="work-status">Work Status</label>
-      <select id="work-status" name="work-status">
-        <option value="foundation">Foundation</option>
-        <option value="structure">Structure</option>
-        <option value="finishing">Finishing</option>
-      </select>
-
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-</div>
