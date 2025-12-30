@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ecf0f1; /* concrete color */
+}
+
+/* Login Page */
+.login-body {
+  background: linear-gradient(to right, #7f8c8d, #3498db); /* steel + water */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.login-box h1 {
+  color: #2c3e50;
+}
+
+.login-box a button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #2c3e50; /* TMT rod color */
+  color: white;
+  cursor: pointer;
+}
