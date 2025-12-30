@@ -44,5 +44,34 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
+.dashboard-box input[type="text"],
+.dashboard-box input[type="file"],
+.dashboard-box input[type="email"],
+.dashboard-box input[type="password"],
+.dashboard-box select,
+.dashboard-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.dashboard-box button,
+.dashboard-box input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-box button:hover,
+.dashboard-box input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
 
 
