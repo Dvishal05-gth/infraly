@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engineer Dashboard</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <body style="background:#ecf0f1;">
+<body style="background:#ecf0f1;">
 
+  <!-- TOP NAVIGATION -->
+  <div style="text-align:right; margin:20px 40px 0 0;">
+    <a href="engineer.html">Dashboard</a> |
+    <a href="profile.html">My Profile</a> |
+    <a href="index.html">Logout</a>
+  </div>
 
-  <div class="login-box">
-    <div style="text-align:right; margin-bottom:20px;">
-  <a href="engineer.html">Dashboard</a> |
-  <a href="profile.html">My Profile</a> |
-  <a href="index.html">Logout</a>
-</div>
+  <!-- DASHBOARD BOX -->
+  <div class="dashboard-box">
+    <h1>Welcome, Engineer!</h1>
+    <p>This is your dashboard. All your tools and info are here.</p>
 
-    <h2>Engineer Dashboard</h2>
-
-    <label>Upload Site Photo</label><br>
-    <input type="file"><br><br>
-
-    <label>Site Name</label><br>
-    <input type="text" placeholder="Bridge Project"><br><br>
-
-    <label>Location</label><br>
-    <input type="text" placeholder="Coimbatore"><br><br>
-
-    <label>Work Status</label><br>
-    <select>
-      <option>Foundation</option>
-      <option>Column</option>
-      <option>Beam</option>
-      <option>Slab</option>
-      <option>Finishing</option>
-    </select><br><br>
-
-    <button>Submit</button>
-    <br>
-<a href="profile.html">Go to Profile</a>
-
+    <!-- Example content cards -->
+    <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:30px;">
+      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
+        <h3>Projects</h3>
+        <p>View and manage your projects.</p>
+      </div>
+      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
+        <h3>Tasks</h3>
+        <p>Check your assigned tasks.</p>
+      </div>
+      <div style="background:#f9f9f9; padding:20px; border-radius:8px; flex:1 1 200px;">
+        <h3>Reports</h3>
+        <p>Generate performance reports.</p>
+      </div>
+    </div>
   </div>
 
 </body>
 </html>
+
 
